@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Supervacuum Store</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        #products h2 {
+            text-align: center;
+        }
+        .button {
+            cursor: pointer; /* Make the button interactive */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-top">
+            <img src="logo2.png" alt="Supervacuum Store Logo" class="logo">
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#products">Products</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <main>
+        <div class="background-image">
+            <div class="dark-overlay"></div>
+            <div class="welcome-text">
+                <h2>Welcome to Supervacuum Store</h2>
+            </div>
+            <div class="welcome-text2">
+                <h3>Explore our wide range of residential and commercial vacuum cleaners, shampooers, chemicals, bags, and parts</h3>
+            </div>
+            <div class="button" onclick="scrollToProducts()">
+                <h2>Shop Vacuum Cleaners</h2>
+            </div>
+            <div class = "Shop Now">
+                <h4>
+                </h4>
+            </div>
+        </div>
+        <section id="products">
+            <style>
+                #products h2 {
+                    text-align: center;
+                    margin-top: 20px; /* Adjusted margin for scrolling position */
+                }
+        
+                .background-image {
+                    padding-bottom: 100px; 
+                }
+            </style>
+            <h2>Our Products</h2>
+            <div class="product-gallery">
+                <div class="product">
+                    <img src="r10e.jpg" alt="Product 1">
+                    <p class="product-name">Riccar R10e</p>
+                    <p class="product-price">$349.99</p>
+                </div>
+                <div class="product">
+                    <img src="r10s.jpg" alt="Product 2">
+                    <p class="product-name">Riccar R10s</p>
+                    <p class="product-price">$899.99</p>
+                </div>
+                <div class="product">
+                    <img src="r25p.jpg" alt="Product 3">
+                    <p class="product-name">Riccar R25p</p>
+                    <p class="product-price">$1199.99</p>
+                </div>
+                <div class="product">
+                    <img src="r50tap_main.jpg" alt="Product 4">
+                    <p class="product-name">Riccar Prima Team </p>
+                    <p class="product-price">$1099.99</p>
+                </div>
+                <div class="product">
+                    <img src="rcu-h7_main.jpg" alt="Product 5">
+                    <p class="product-name">Riccar Duluxe Hybrid Central Vacuum </p>
+                    <p class="product-price">$1299.99</p>
+                </div>
+                <div class="product">
+                    <img src="supraquick.jpg" alt="Product 6">
+                    <p class="product-name">Riccar SupraQuik Portable Canister Vacuum </p>
+                    <p class="product-price">$299.99</p>
+                </div>
+            </div>
+        </section>
+        <section id="map-section">
+            <div class="map-container">
+                <img src="map2.png" alt="Map Image" class="map-image" style="width: 1500px; height: auto;">
+            </div>
+        </section>   
+        <section id="locations">
+            <h2>Our Locations</h2>
+            <div class="location-list">
+                <div class="location">
+                    <img src="pin.jpeg" alt="Map Pin" class="pin-image">
+                    <p>Dowtown Rochester: 722 N Winton Rd, Rochester, NY</p>
+                </div>
+                <div class="location">
+                    <img src="pin.jpeg" alt="Map Pin" class="pin-image">
+                    <p>Greece: 1577 W Ridge Rd, Rochester, NY</p>
+                </div>
+                <div class="location">
+                    <img src="pin.jpeg" alt="Map Pin" class="pin-image">
+                    <p>Williamsville: 8018 Transit Rd, Williamsville, NY 14221</p>
+                </div>
+                <div class="location">
+                    <img src="pin.jpeg" alt="Map Pin" class="pin-image">
+                    <p>East Aurora: 661 Main St, East Aurora, NY</p>
+                </div>
+                <div class="location">
+                    <img src="pin.jpeg" alt="Map Pin" class="pin-image">
+                    <p>Tonawanda: 1614 Niagara Falls Blvd, Tonawanda, NY</p>
+                </div>
+                <div class="location">
+                    <img src="pin.jpeg" alt="Map Pin" class="pin-image">
+                    <p>Hamburg: 3701 McKinley Pkwy, Hamburg, NY</p>
+                </div>
+                <div class="location">
+                    <img src="pin.jpeg" alt="Map Pin" class="pin-image">
+                    <p>Cheektowaga: 2775 Union Rd, Cheektowaga, NY</p>
+                </div>
+            </div>
+        </section>
+        <section id="about", section id ="contact">
+            <h2>About Us</h2>
+            <p> <br> </p>
+            <p>Welcome to Supervacuum Store! We have been providing top-quality residential and commercial vacuum cleaners, shampooers, chemicals, bags, and parts for over 35 years. Our mission is to deliver exceptional products and outstanding customer service to meet all your cleaning needs.</p>
+            <p> <br> </p>
+            <p>Have a question or need assistance? Feel free to contact us using the information below:</p>
+            <p>Phone: (585)-482-6111</p>
+            <p>Email: spencer@supervacuumstore.com</p>
+            <p> <br> </p>
+            <div class="todd">
+                <img src="todd.jpg" class="todd">
+                <img src="todd2.jpg" class="todd">
+            </div>
+   
+    </main>
+    <script>
+        function scrollToProducts() {
+            var productsSection = document.getElementById("products");
+            var yOffset = -160; // Adjust this value as needed to scroll higher or lower
+            var y = productsSection.getBoundingClientRect().top + window.pageYOffset + yOffset;
+            window.scrollTo({ top: y, behavior: 'smooth' });
+        }
+    </script>
+</body>
+</html>
