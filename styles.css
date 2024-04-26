@@ -288,3 +288,8 @@ footer p {
     width: 600px;
     height: auto;
 }
+.about-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+}
